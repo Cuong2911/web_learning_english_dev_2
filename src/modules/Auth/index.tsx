@@ -1,5 +1,5 @@
 // static
-import { Login, Signup } from './components';
+import { LoginForm, SignupForm } from './components';
 
 type Props = {
     login?: boolean;
@@ -10,8 +10,8 @@ const Auth = (props: Props) => {
     const { login = false, signup = false } = props;
     return (
         <div>
-            {login && <Login />}
-            {signup && <Signup />}
+            {login && <LoginForm />}
+            {signup && <SignupForm />}
         </div>
     );
 };

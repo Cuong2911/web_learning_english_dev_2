@@ -1,18 +1,17 @@
 // library
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-
 // static
-import Home from '~/modules/Home';
-import Auth from '~/modules/Auth';
+import { publicRoutes } from '~/routes';
 
 function App() {
     return (
         <Router>
             <div>
                 <Routes>
-                    <Route path="/" element={<Home />} />
-                    <Route path="/auth/login" element={<Auth login />} />
-                    <Route path="/auth/sign-up" element={<Auth signup />} />
+                    {publicRoutes.map((route) => {
+                        const Page = route.component;
+                        return <Route key={route.path} path={route.path} element={<Page {...route.props} />} />;
+                    })}
                 </Routes>
             </div>
         </Router>
