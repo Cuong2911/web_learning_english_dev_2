@@ -1,6 +1,8 @@
 import Auth from './Auth';
 import Home from './Home';
 import NotFoundPage from './NotFoundPage';
-import { ListCourses, InforCourse, LearningCourse } from './Learning';
+import * as Learning from './Learning';
 
-export { Auth, Home, NotFoundPage, ListCourses, InforCourse, LearningCourse };
+// ------------------------------------------------------------------------
+
+export { Auth, Home, NotFoundPage, Learning };

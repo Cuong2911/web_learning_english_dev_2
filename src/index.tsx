@@ -1,11 +1,11 @@
-// library
+// ------------------------------------------------------------------------
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-
-// static
+// ------------------------------------------------------------------------
 import App from '~/App';
 import reportWebVitals from '~/reportWebVitals';
 import { GlobalStyles } from '~/components';
+// ------------------------------------------------------------------------
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 root.render(

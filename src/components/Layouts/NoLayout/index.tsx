@@ -1,14 +1,14 @@
 // ------------------------------------------------------------------------
-import './GlobalStyles.scss';
+import { Fragment } from 'react';
 // ------------------------------------------------------------------------
 type Props = {
-    children: string | JSX.Element | JSX.Element[];
+    children: JSX.Element | JSX.Element[];
 };
 // ------------------------------------------------------------------------
 
-const GlobalStyles = (props: Props) => {
+const NoLayout = (props: Props) => {
     const { children } = props;
-    return <section className="global-styles">{children}</section>;
+    return <div className="app-no-layout">{children}</div>;
 };
 
-export default GlobalStyles;
+export default NoLayout;
