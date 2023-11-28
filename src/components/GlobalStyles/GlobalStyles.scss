@@ -1,0 +1,25 @@
+@import 'normalize.css';
+@import 'bootstrap';
+@import '@fontsource/be-vietnam';
+
+:root {
+    --bg-primary-color: #ff9900;
+
+    --text-primary-color: #000000;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Be Vietnam', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    text-rendering: optimizeSpeed;
+    color: var(--text-primary-color);
+}
