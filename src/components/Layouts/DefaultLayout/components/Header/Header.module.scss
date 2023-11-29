@@ -52,6 +52,7 @@
     .profile-item {
         width: 100%;
         font-size: 1.4rem;
+        cursor: pointer;
         &:hover {
             opacity: 0.7;
         }
@@ -59,6 +60,7 @@
     .profile-item:first-child {
         padding-bottom: 12px;
         justify-content: start;
+        cursor: context-menu;
         &:hover {
             opacity: 1;
         }
@@ -67,7 +69,6 @@
             height: 36px;
         }
         .profile-menu-info {
-            cursor: context-menu;
             overflow: hidden;
             flex: 1;
             h1 {
@@ -82,7 +83,7 @@
         }
     }
     .profile-item:last-child {
-        a {
+        div {
             color: rgb(255, 0, 0);
         }
     }

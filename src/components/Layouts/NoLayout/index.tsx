@@ -1,4 +1,6 @@
 // ------------------------------------------------------------------------
+import { Fragment } from 'react';
+// ------------------------------------------------------------------------
 type Props = {
     children: JSX.Element | JSX.Element[];
 };
@@ -6,7 +8,11 @@ type Props = {
 
 const NoLayout = (props: Props) => {
     const { children } = props;
-    return <div className="app-no-layout">{children}</div>;
+    return (
+        <Fragment>
+            <div style={{ height: '100vh' }}>{children}</div>
+        </Fragment>
+    );
 };
 
 export default NoLayout;

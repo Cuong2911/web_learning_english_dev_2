@@ -95,19 +95,18 @@ const Header = () => {
                                 <hr className="dropdown-divider" />
                             </li>
                             <li className={`${cx('profile-item')}`}>
-                                <a className="dropdown-item" href={ROUTES.home} onClick={onLogout}>
+                                <div className="dropdown-item" onClick={onLogout}>
                                     Đăng xuất
-                                </a>
+                                </div>
                             </li>
                         </ul>
                     </div>
                 ) : (
                     <div className={`display-center ${cx('nav-end')}`}>
                         <button type="button" className={`btn btn-dark ${cx('nav-btn')}`}>
-                            {/* <a className={`${cx('nav-btn-link')}`} href={ROUTES.login}> */}
-                            <a className={`${cx('nav-btn-link')}`} onClick={onLogin}>
+                            <div className={`${cx('nav-btn-link')}`} onClick={onLogin}>
                                 Đăng nhập
-                            </a>
+                            </div>
                         </button>
                         <button type="button" className={`btn btn-dark ${cx('nav-btn')}`}>
                             <a className={`${cx('nav-btn-link')}`} href={ROUTES.signup}>

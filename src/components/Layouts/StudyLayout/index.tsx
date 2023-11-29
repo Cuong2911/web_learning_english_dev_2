@@ -1,4 +1,6 @@
 // ------------------------------------------------------------------------
+import { Fragment } from 'react';
+// ------------------------------------------------------------------------
 import { Footer, Header } from './components';
 // ------------------------------------------------------------------------
 type Props = {
@@ -9,11 +11,11 @@ type Props = {
 const StudyLayout = (props: Props) => {
     const { children } = props;
     return (
-        <div className="app-study-layout">
+        <Fragment>
             <Header />
-            {children}
+            <div style={{ paddingTop: 'var(--height-navbar)', height: '1000px' }}>{children}</div>
             <Footer />
-        </div>
+        </Fragment>
     );
 };
 
