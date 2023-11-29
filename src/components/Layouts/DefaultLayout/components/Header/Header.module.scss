@@ -1,3 +1,89 @@
 .header {
-    color: red;
+    height: var(--height-navbar);
+    background-color: var(--bg-primary-color);
+}
+.nav {
+    height: 100%;
+}
+// nav-logo left
+.nav-logo {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+// nav-menu center
+.nav-menu {
+    .nav-item {
+        margin-left: 12px;
+        font-size: 1.6rem;
+        .nav-link {
+            color: var(--text-primary-color);
+            padding: 8px;
+            &:hover {
+                opacity: 0.5;
+            }
+        }
+        &.active .nav-link {
+            opacity: 0.7;
+        }
+    }
+}
+// nav right
+// nav-end login signup btn
+.nav-end {
+    .nav-btn {
+        margin-right: 8px;
+        .nav-btn-link {
+            font-size: 1.2rem;
+            color: var(--text-primary-color-light);
+        }
+    }
+}
+// nav profile
+.profile {
+    height: 32px;
+    width: 32px;
+}
+.profile-menu {
+    width: 200px;
+    left: unset !important;
+    right: 0 !important;
+    font-size: 1.2rem;
+    padding: 8px 12px;
+    .profile-item {
+        width: 100%;
+        font-size: 1.4rem;
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+    .profile-item:first-child {
+        padding-bottom: 12px;
+        justify-content: start;
+        &:hover {
+            opacity: 1;
+        }
+        .profile-menu-avt {
+            width: 36px;
+            height: 36px;
+        }
+        .profile-menu-info {
+            cursor: context-menu;
+            overflow: hidden;
+            flex: 1;
+            h1 {
+                font-size: 1.6rem;
+                font-weight: 600;
+            }
+            p {
+                font-size: 1.2rem;
+                margin: 0;
+                opacity: 0.7;
+            }
+        }
+    }
+    .profile-item:last-child {
+        a {
+            color: rgb(255, 0, 0);
+        }
+    }
 }

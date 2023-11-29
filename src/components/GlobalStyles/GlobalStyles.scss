@@ -6,6 +6,9 @@
     --bg-primary-color: #ff9900;
 
     --text-primary-color: #000000;
+    --text-primary-color-light: #ffffff;
+
+    --height-navbar: 70px;
 }
 
 * {
@@ -22,4 +25,31 @@ body {
     line-height: 1.5;
     text-rendering: optimizeSpeed;
     color: var(--text-primary-color);
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+.display-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.avt-circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border-radius: 50%;
+    border: 1px solid #333;
+    overflow: hidden;
+    img {
+        width: 100%;
+    }
 }

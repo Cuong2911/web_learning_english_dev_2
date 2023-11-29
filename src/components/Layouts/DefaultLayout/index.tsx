@@ -11,7 +11,7 @@ const DefaultLayout = (props: Props) => {
     return (
         <div className="app-default-layout">
             <Header />
-            {children}
+            <div style={{ paddingTop: 'var(--height-navbar)', height: '1000px' }}>{children}</div>
             <Footer />
         </div>
     );
