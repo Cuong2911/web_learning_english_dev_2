@@ -3,10 +3,17 @@
 @import '@fontsource/be-vietnam';
 
 :root {
-    --bg-primary-color: #ff9900;
+    --bg-primary-color: #f4abaf;
+    --bg-primary-color-dark: #ff7077;
+    --bg-light-color: #ffffff;
+    --bg-light-color-sub: #b8b8b8;
 
     --text-primary-color: #000000;
+    --text-primary-color-sub: #0000005b;
     --text-primary-color-light: #ffffff;
+    --text-primary-color-light-sub: #ffffff5b;
+    --text-primary-color-danger: #f70000;
+    --text-primary-color-danger-sub: #f700005b;
 
     --height-navbar: 70px;
 }
@@ -39,6 +46,18 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 100%;
+}
+.display-left {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    height: 100%;
+}
+.display-right {
+    display: flex;
+    align-items: center;
+    justify-content: end;
     height: 100%;
 }
 .avt-circle {

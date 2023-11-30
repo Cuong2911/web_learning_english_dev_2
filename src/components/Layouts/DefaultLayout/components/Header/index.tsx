@@ -1,6 +1,4 @@
 // ------------------------------------------------------------------------
-import { useState } from 'react';
-// ------------------------------------------------------------------------
 import classNames from 'classnames/bind';
 import styles from './Header.module.scss';
 import { ROUTES } from '~/configs/routes';
@@ -19,23 +17,16 @@ interface Iuser {
     gmail?: string;
     avtUrl?: string;
 }
-const userApi: Iuser = {
-    id: '123456',
-    name: 'Hoang cuong',
-    gmail: 'hvcuong29112001@gmail.com',
-    avtUrl: 'https://i.pinimg.com/564x/a1/ae/ff/a1aeff688cc6ad5ae43c9a9fa5a1a531.jpg',
+const user: Iuser = {
+    // id: '123456',
+    // name: 'Hoang cuong',
+    // gmail: 'hvcuong29112001@gmail.com',
+    // avtUrl: 'https://i.pinimg.com/564x/a1/ae/ff/a1aeff688cc6ad5ae43c9a9fa5a1a531.jpg',
 };
 // ------------------------------------------------------------------------
 
 const Header = () => {
-    const [user, setUser] = useState<Iuser>({});
     const isLogin = Object.keys(user).length === 0;
-    const onLogin = () => {
-        setUser(userApi);
-    };
-    const onLogout = () => {
-        setUser({});
-    };
 
     return (
         <nav className={`fixed-top navbar ${cx('header')}`}>
@@ -95,18 +86,18 @@ const Header = () => {
                                 <hr className="dropdown-divider" />
                             </li>
                             <li className={`${cx('profile-item')}`}>
-                                <div className="dropdown-item" onClick={onLogout}>
+                                <a className="dropdown-item" href={ROUTES.home}>
                                     Đăng xuất
-                                </div>
+                                </a>
                             </li>
                         </ul>
                     </div>
                 ) : (
                     <div className={`display-center ${cx('nav-end')}`}>
                         <button type="button" className={`btn btn-dark ${cx('nav-btn')}`}>
-                            <div className={`${cx('nav-btn-link')}`} onClick={onLogin}>
+                            <a className={`${cx('nav-btn-link')}`} href={ROUTES.login}>
                                 Đăng nhập
-                            </div>
+                            </a>
                         </button>
                         <button type="button" className={`btn btn-dark ${cx('nav-btn')}`}>
                             <a className={`${cx('nav-btn-link')}`} href={ROUTES.signup}>

@@ -19,11 +19,11 @@
             color: var(--text-primary-color);
             padding: 8px;
             &:hover {
-                opacity: 0.5;
+                color: var(--text-primary-color-sub);
             }
         }
         &.active .nav-link {
-            opacity: 0.7;
+            color: var(--text-primary-color-sub);
         }
     }
 }
@@ -53,16 +53,16 @@
         width: 100%;
         font-size: 1.4rem;
         cursor: pointer;
-        &:hover {
-            opacity: 0.7;
+        &:hover a {
+            color: var(--text-primary-color-sub);
         }
     }
     .profile-item:first-child {
         padding-bottom: 12px;
         justify-content: start;
         cursor: context-menu;
-        &:hover {
-            opacity: 1;
+        &:hover a {
+            color: var(--text-primary-color);
         }
         .profile-menu-avt {
             width: 36px;
@@ -83,8 +83,11 @@
         }
     }
     .profile-item:last-child {
-        div {
-            color: rgb(255, 0, 0);
+        a {
+            color: var(--text-primary-color-danger);
+            &:hover {
+                color: var(--text-primary-color-danger-sub);
+            }
         }
     }
 }
