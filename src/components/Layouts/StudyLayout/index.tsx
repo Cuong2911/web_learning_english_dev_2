@@ -1,7 +1,7 @@
 // ------------------------------------------------------------------------
 import { Fragment } from 'react';
 // ------------------------------------------------------------------------
-import { Footer, Header } from './components';
+import { Header } from './components';
 // ------------------------------------------------------------------------
 type Props = {
     children: JSX.Element | JSX.Element[];
@@ -13,8 +13,14 @@ const StudyLayout = (props: Props) => {
     return (
         <Fragment>
             <Header />
-            <div style={{ paddingTop: 'var(--height-navbar)', height: '1000px' }}>{children}</div>
-            <Footer />
+            <div
+                style={{
+                    paddingTop: 'var(--height-header-study-layout)',
+                    height: '1000px',
+                }}
+            >
+                {children}
+            </div>
         </Fragment>
     );
 };

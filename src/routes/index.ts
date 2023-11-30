@@ -51,7 +51,7 @@ const publicRoutes: Array<IpublicRoutes> = [
     {
         path: ROUTES.notfound,
         component: modules.NotFoundPage,
-        layout: Layouts.DefaultLayout,
+        layout: Layouts.NoLayout,
         props: {},
     },
 ];
