@@ -8,6 +8,8 @@ type Props = {
 
 const GlobalStyles = (props: Props) => {
     const { children } = props;
+    console.log('render');
+
     return <section className="global-styles">{children}</section>;
 };
 

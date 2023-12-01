@@ -1,10 +1,10 @@
 // ------------------------------------------------------------------------
 import classNames from 'classnames/bind';
+import { NavLink, useLocation } from 'react-router-dom';
 // ------------------------------------------------------------------------
 import styles from './Header.module.scss';
 import { PATH } from '~/configs/routes';
 import { image } from '~/assets';
-import { useLocation } from 'react-router-dom';
 // ------------------------------------------------------------------------
 const cx = classNames.bind(styles);
 
@@ -59,9 +59,9 @@ const Header = () => {
                         const active = item.path === path ? cx('active') : '';
                         return (
                             <li key={index} className={`display-center ${cx('nav-item')} ${active}`}>
-                                <a className={`${cx('nav-link')}`} href={item.path}>
+                                <NavLink className={`${cx('nav-link')}`} to={item.path}>
                                     {item.title}
-                                </a>
+                                </NavLink>
                             </li>
                         );
                     })}
@@ -96,9 +96,9 @@ const Header = () => {
                                     </li>
                                 ) : (
                                     <li key={index} className={`${cx('profile-item')}`}>
-                                        <a className="dropdown-item" href={path}>
+                                        <NavLink className="dropdown-item" to={path ? path : ''}>
                                             {item.title}
-                                        </a>
+                                        </NavLink>
                                     </li>
                                 );
                             })}
@@ -107,14 +107,14 @@ const Header = () => {
                 ) : (
                     <div className={`display-center ${cx('nav-end')}`}>
                         <button type="button" className={`btn btn-dark ${cx('nav-btn')}`}>
-                            <a className={`${cx('nav-btn-link')}`} href="/auth/login">
+                            <NavLink className={`${cx('nav-btn-link')}`} to="/auth/login">
                                 Đăng nhập
-                            </a>
+                            </NavLink>
                         </button>
                         <button type="button" className={`btn btn-dark ${cx('nav-btn')}`}>
-                            <a className={`${cx('nav-btn-link')}`} href="/auth/sign-up">
+                            <NavLink className={`${cx('nav-btn-link')}`} to="/auth/sign-up">
                                 Đăng ký
-                            </a>
+                            </NavLink>
                         </button>
                     </div>
                 )}

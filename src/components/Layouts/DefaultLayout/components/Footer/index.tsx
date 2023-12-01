@@ -3,6 +3,7 @@ import classNames from 'classnames/bind';
 import { FaLocationDot, FaPhone } from 'react-icons/fa6';
 import { FaFacebookSquare, FaInstagramSquare, FaTwitterSquare, FaLinkedin } from 'react-icons/fa';
 import { BiLogoGmail } from 'react-icons/bi';
+import { NavLink } from 'react-router-dom';
 // ------------------------------------------------------------------------
 import styles from './Footer.module.scss';
 import { PATH } from '~/configs/routes';
@@ -19,7 +20,7 @@ const Footer = () => {
                     <div className={`col-12 display-center ${cx('footer-start')}`}>
                         <h4 className={`me-3`}>Học tiếng Anh Ngay Lúc Này! </h4>
                         <button type="button" className={`btn btn-dark`}>
-                            <a href={PATH.login}>Bắt đầu</a>
+                            <NavLink to={PATH.login}>Bắt đầu</NavLink>
                         </button>
                     </div>
                 </div>
