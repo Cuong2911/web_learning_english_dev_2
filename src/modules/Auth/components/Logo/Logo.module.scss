@@ -1,0 +1,19 @@
+.logo {
+    padding: 0 80px;
+}
+.logo-head {
+    img {
+        height: 100px;
+    }
+    div {
+        display: flex;
+        flex-direction: column;
+        span {
+            font-size: 4.2rem;
+            font-weight: 600;
+        }
+    }
+}
+.logo-desc {
+    margin-top: 24px;
+}
