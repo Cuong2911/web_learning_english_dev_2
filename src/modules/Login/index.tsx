@@ -1,11 +1,9 @@
 // ------------------------------------------------------------------------
 import classNames from 'classnames/bind';
-import { useEffect } from 'react';
 import { IoMdHome } from 'react-icons/io';
 import { NavLink } from 'react-router-dom';
 // ------------------------------------------------------------------------
 import { LoginForm, SignupForm, Logo } from './components';
-import { TabTitleHandle } from '~/utils/titleDocHandle';
 import Styles from './Auth.module.scss';
 import { PATH } from '~/configs/routes';
 // ------------------------------------------------------------------------
@@ -18,9 +16,7 @@ type Props = {
 
 const Auth = (props: Props) => {
     const { login = false, signup = false } = props;
-    useEffect(() => {
-        TabTitleHandle(login ? 'Login' : 'Signup');
-    });
+
     return (
         <div className={`container`}>
             <div className={`${cx('back-home-btn')}`}>

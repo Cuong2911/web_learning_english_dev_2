@@ -1,3 +1,3 @@
-export const TabTitleHandle = (newTitle: string) => {
-    return (document.title = newTitle);
+export const TabTitleHandle = (newTitle: string | undefined) => {
+    return (document.title = newTitle ? newTitle : 'Learn English Web');
 };

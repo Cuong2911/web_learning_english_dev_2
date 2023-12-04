@@ -2,6 +2,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 // ------------------------------------------------------------------------
 import { publicRoutes } from '~/routes';
+import { TabTitle } from './components';
 // ------------------------------------------------------------------------
 
 function App() {
@@ -16,9 +17,11 @@ function App() {
                             key={route.path}
                             path={route.path}
                             element={
-                                <Layout>
-                                    <Page {...route.props} />
-                                </Layout>
+                                <TabTitle>
+                                    <Layout>
+                                        <Page {...route.props} />
+                                    </Layout>
+                                </TabTitle>
                             }
                         />
                     );

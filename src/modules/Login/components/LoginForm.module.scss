@@ -9,7 +9,7 @@
 .login-heading {
     display: flex;
     align-items: center;
-    justify-content: start;
+    justify-content: flex-start;
     h1 {
         font-size: 3.6rem;
         font-weight: 600;
@@ -22,7 +22,7 @@
     flex: 1;
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: flex-start;
     justify-content: center;
     .form-field {
         padding: 0px 8px 6px;
@@ -82,7 +82,7 @@
     div {
         display: flex;
         align-items: center;
-        justify-content: end;
+        justify-content: flex-end;
         a {
             color: var(--text-primary-color);
             margin-left: 8px;

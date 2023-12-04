@@ -25,13 +25,13 @@ const menuList = [
     { title: 'Trang chủ', path: PATH.home },
     { title: 'Học tập', path: PATH.listCourses },
     { title: 'Kiểm tra', path: PATH.examList },
-    { title: 'Trò chơi', path: PATH.quiz },
+    { title: 'Trò chơi', path: PATH.quizList },
     { title: 'Giới thiệu', path: PATH.about },
 ];
 const profileMenuList = [
     { divider: true },
-    { divider: false, title: 'Hồ sơ của tôi', path: PATH.profileDetail },
-    { divider: false, title: 'Khóa học của tôi', path: PATH.profileCourses },
+    { divider: false, title: 'Hồ sơ của tôi', path: PATH.authDetail },
+    { divider: false, title: 'Khóa học của tôi', path: PATH.authCourse },
     { divider: false, title: 'Cài đặt', path: PATH.setting },
     { divider: true },
     { divider: false, title: 'Đăng xuất', path: PATH.home },

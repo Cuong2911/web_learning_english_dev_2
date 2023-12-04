@@ -89,6 +89,7 @@
     .profile-item:last-child {
         a {
             color: var(--text-primary-color-danger);
+            background-color: #fff;
             &:hover {
                 color: var(--text-primary-color-danger-sub);
             }

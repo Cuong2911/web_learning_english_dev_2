@@ -6,7 +6,7 @@ import { FaGoogle, FaSquareFacebook, FaSquareGithub } from 'react-icons/fa6';
 import { IoIosArrowForward } from 'react-icons/io';
 import { useState } from 'react';
 // ------------------------------------------------------------------------
-import Styles from './LoginForm.module.scss';
+import Styles from '../LoginForm.module.scss';
 import { image } from '~/assets';
 import { PATH } from '~/configs/routes';
 // ------------------------------------------------------------------------
@@ -34,7 +34,7 @@ const LoginForm = () => {
     return (
         <div className={`${cx('login')}`}>
             <div className={`${cx('login-heading')}`}>
-                <h1>Login</h1>
+                <h1>Đăng nhập</h1>
                 <img src={image.loginHeading} alt="Img" />
             </div>
             <form className={`${cx('login-form')}`}>
@@ -72,7 +72,7 @@ const LoginForm = () => {
                 </div>
             </form>
             <div className={`${cx('login-social')}`}>
-                <h1>Đăng Nhập bằng cách khác</h1>
+                <h1>Đăng nhập bằng cách khác</h1>
                 <div>
                     <a href="https://www.facebook.com/">
                         <FaSquareFacebook size={20} />

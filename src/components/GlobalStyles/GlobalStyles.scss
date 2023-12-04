@@ -9,6 +9,7 @@
     --bg-primary-color-dark-2: #ff555d;
     --bg-light-color: #ffffff;
     --bg-light-color-sub: #b8b8b8;
+    --bg-light-color-hover: #f8f8f8;
 
     --text-primary-color: #000000;
     --text-primary-color-sub: #0000005b;
@@ -57,13 +58,13 @@ a {
 .display-left {
     display: flex;
     align-items: center;
-    justify-content: start;
+    justify-content: flex-start;
     height: 100%;
 }
 .display-right {
     display: flex;
     align-items: center;
-    justify-content: end;
+    justify-content: flex-end;
     height: 100%;
 }
 .avt-circle {
@@ -77,4 +78,10 @@ a {
     img {
         width: 100%;
     }
+}
+.dropdown-item.active,
+.dropdown-item:active {
+    color: var(--text-primary-color);
+    text-decoration: none;
+    background-color: var(--bg-light-color-hover);
 }
