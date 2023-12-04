@@ -3,11 +3,11 @@ import { ROUTES } from '~/configs/routes';
 import * as modules from '~/modules';
 import { Layouts } from '~/components';
 // ------------------------------------------------------------------------
-import { IpublicRoutes, IprivateRoutes } from './constants';
+import { IRoutes } from './constants';
 // ------------------------------------------------------------------------
 
 // publicroutes
-const publicRoutes: Array<IpublicRoutes> = [
+const publicRoutes: Array<IRoutes> = [
     {
         path: ROUTES.home,
         component: modules.Home,
@@ -30,12 +30,7 @@ const publicRoutes: Array<IpublicRoutes> = [
             signup: true,
         },
     },
-    {
-        path: ROUTES.listCourses,
-        component: modules.learning.ListCourses,
-        layout: Layouts.DefaultLayout,
-        props: {},
-    },
+
     {
         path: ROUTES.infoCourse,
         component: modules.learning.InforCourse,
@@ -134,6 +129,13 @@ const publicRoutes: Array<IpublicRoutes> = [
     },
 ];
 // privateRoutes
-const privateRoutes: Array<IprivateRoutes> = [];
+const privateRoutes: Array<IRoutes> = [
+    {
+        path: ROUTES.listCourses,
+        component: modules.learning.ListCourses,
+        layout: Layouts.DefaultLayout,
+        props: {},
+    },
+];
 
 export { publicRoutes, privateRoutes };
