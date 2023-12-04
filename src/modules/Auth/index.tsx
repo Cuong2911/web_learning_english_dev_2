@@ -1,12 +1,13 @@
 // ------------------------------------------------------------------------
 import classNames from 'classnames/bind';
 import { useEffect } from 'react';
+import { IoMdHome } from 'react-icons/io';
 import { NavLink } from 'react-router-dom';
 // ------------------------------------------------------------------------
 import { LoginForm, SignupForm, Logo } from './components';
 import { TabTitleHandle } from '~/utils/titleDocHandle';
 import Styles from './Auth.module.scss';
-import { ROUTES } from '~/configs/routes';
+import { PATH } from '~/configs/routes';
 // ------------------------------------------------------------------------
 const cx = classNames.bind(Styles);
 type Props = {
@@ -22,7 +23,11 @@ const Auth = (props: Props) => {
     });
     return (
         <div className={`container`}>
-            <NavLink to={ROUTES.signup}>dang ky</NavLink>
+            <div className={`${cx('back-home-btn')}`}>
+                <NavLink to={PATH.home}>
+                    <IoMdHome />
+                </NavLink>
+            </div>
             <div className={`row display-center`}>
                 <div className={`col-8 ${cx('')}`}>
                     <Logo />
