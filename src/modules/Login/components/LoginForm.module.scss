@@ -26,7 +26,7 @@
     justify-content: center;
     .form-field {
         padding: 0px 8px 6px;
-        border-bottom: 1px solid #ad3e3e81;
+        border-bottom: 1px solid var(--bg-dark-color-hover);
         margin: 0 4px 8px;
         width: 80%;
         display: flex;
@@ -42,14 +42,14 @@
             flex: 1;
         }
         &:hover {
-            border-bottom: 1px solid #ad3e3e;
+            border-bottom: 1px solid var(--bg-dark-color);
         }
         &:has(input:focus) {
-            border-bottom: 1px solid #ad3e3e;
+            border-bottom: 1px solid var(--bg-dark-color);
         }
     }
     .form-button {
-        background-color: #ffc4c7;
+        background-color: var(--bg-light-color);
         padding: 12px;
         font-size: 1.4rem;
         font-weight: 600;
@@ -59,11 +59,11 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        box-shadow: 0px 2px 2px #ad3e3e;
+        box-shadow: 0px 2px 2px var(--bg-dark-color-sub);
         cursor: pointer;
-        border: 1px solid #c9acac;
+        border: 1px solid var(--bg-dark-color-hover);
         &:hover {
-            border-color: #c28282;
+            border-color: var(--bg-dark-color);
         }
         a {
             color: #000000;

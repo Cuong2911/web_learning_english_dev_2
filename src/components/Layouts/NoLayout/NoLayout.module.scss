@@ -1,5 +1,5 @@
 .page {
     width: 100vw;
     height: 100vh;
-    background-image: linear-gradient(to top, #ffa1a6 0%, #ff858b 100%);
+    background-image: linear-gradient(to top, var(--bg-primary-color-dark), var(--bg-primary-color-light));
 }
