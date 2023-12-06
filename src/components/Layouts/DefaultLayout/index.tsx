@@ -13,7 +13,7 @@ const DefaultLayout = (props: Props) => {
     return (
         <Fragment>
             <Header />
-            <div style={{ paddingTop: 'var(--height-navbar)', height: '1000px' }}>{children}</div>
+            <div style={{ paddingTop: 'var(--height-navbar)' }}>{children}</div>
             <Footer />
         </Fragment>
     );

@@ -47,7 +47,7 @@ const Header = () => {
 
     return (
         <nav className={`fixed-top navbar ${cx('header')}`}>
-            <div className={`container ${cx('nav')}`}>
+            <div className={`container animation-fade-in-TtB ${cx('nav')}`}>
                 {/* -----------------nav logo-------------------- */}
                 <div className={`display-center ${cx('nav-logo')}`}>
                     <img src={image.logo} alt="Logo" />

@@ -1,0 +1,31 @@
+.card {
+    background-color: transparent;
+    height: 100%;
+}
+.image {
+    padding: 12px 24px;
+    img {
+        height: 100%;
+        width: 100%;
+    }
+}
+.content {
+    padding: 12px 24px;
+    height: 100%;
+    flex-direction: column;
+    .title {
+        font-weight: 600;
+    }
+    .desc {
+    }
+    .btn {
+        display: block;
+        padding: 12px 24px;
+        a {
+            font-size: 1.2rem;
+            color: var(--text-primary-color-light);
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+    }
+}

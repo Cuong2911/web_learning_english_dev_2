@@ -1,0 +1,18 @@
+.wrap {
+    background-image: linear-gradient(to bottom, var(--bg-primary-color), var(--bg-primary-color-light-1));
+    position: relative;
+    height: 100vh;
+}
+.main {
+    height: 80%;
+}
+.bg {
+    height: 100%;
+}
+.end {
+    position: absolute;
+    bottom: 0;
+    background-image: url(https://www.voca.vn/assets/images/home-cloud-bg.png);
+    height: 159px;
+    width: 100%;
+}
