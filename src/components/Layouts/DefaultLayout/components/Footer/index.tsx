@@ -5,7 +5,7 @@ import { FaFacebookSquare, FaInstagramSquare, FaTwitterSquare, FaLinkedin } from
 import { BiLogoGmail } from 'react-icons/bi';
 import { NavLink } from 'react-router-dom';
 // ------------------------------------------------------------------------
-import styles from './Footer.module.scss';
+import styles from './main.module.scss';
 import { PATH } from '~/configs/routes';
 // ------------------------------------------------------------------------
 const cx = classNames.bind(styles);

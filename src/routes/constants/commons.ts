@@ -15,20 +15,6 @@ const commonsRoutes: Array<IRoutes> = [
         isPrivate: false,
     },
     {
-        path: ROUTES.about,
-        component: modules.About,
-        layout: Layouts.DefaultLayout,
-        props: {},
-        isPrivate: false,
-    },
-    {
-        path: ROUTES.setting,
-        component: modules.Setting,
-        layout: Layouts.DefaultLayout,
-        props: {},
-        isPrivate: false,
-    },
-    {
         path: ROUTES.notfound,
         component: modules.NotFoundPage,
         layout: Layouts.NoLayout,

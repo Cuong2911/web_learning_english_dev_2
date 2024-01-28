@@ -6,27 +6,41 @@ import { Layouts } from '~/components';
 import { IRoutes } from '../config';
 // ------------------------------------------------------------------------
 
-const learningRoutes: Array<IRoutes> = [
+const learning: Array<IRoutes> = [
     {
-        path: ROUTES.listCourses,
-        component: modules.learning.ListCourses,
+        path: ROUTES.listen,
+        component: modules.learning.ListenPage,
         layout: Layouts.DefaultLayout,
         props: {},
         isPrivate: false,
     },
     {
-        path: ROUTES.infoCourse,
-        component: modules.learning.InforCourse,
+        path: ROUTES.voca,
+        component: modules.learning.VocaPage,
         layout: Layouts.DefaultLayout,
         props: {},
         isPrivate: false,
     },
     {
-        path: ROUTES.learningCourse,
-        component: modules.learning.LearningCourse,
-        layout: Layouts.StudyLayout,
+        path: ROUTES.grammar,
+        component: modules.learning.GrammarPage,
+        layout: Layouts.DefaultLayout,
         props: {},
-        isPrivate: true,
+        isPrivate: false,
+    },
+    {
+        path: ROUTES.pronounce,
+        component: modules.learning.PronouncePage,
+        layout: Layouts.DefaultLayout,
+        props: {},
+        isPrivate: false,
+    },
+    {
+        path: ROUTES.game,
+        component: modules.learning.GamePage,
+        layout: Layouts.DefaultLayout,
+        props: {},
+        isPrivate: false,
     },
 ];
-export default learningRoutes;
+export default learning;

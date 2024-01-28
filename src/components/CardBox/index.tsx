@@ -1,8 +1,8 @@
 // --------------------------------------------------------------
 import classNames from 'classnames/bind';
 // --------------------------------------------------------------
-import Styles from './CardBox.module.scss';
-import { type } from 'os';
+import Styles from './main.module.scss';
+import { NavLink } from 'react-router-dom';
 // --------------------------------------------------------------
 const cx = classNames.bind(Styles);
 type Props = {
@@ -28,7 +28,7 @@ const CardBox = (props: Props) => {
         title,
         desc,
         btn,
-        btnLink,
+        btnLink = '',
         content = 'center',
         titleColor = 'black',
         titleFontSize = '3.4rem',
@@ -52,7 +52,7 @@ const CardBox = (props: Props) => {
                 </div>
                 {btn && (
                     <button className={`btn btn-dark Header_nav-btn__G+HSP ${cx('btn')}`}>
-                        <a href={btnLink}>{btn}</a>
+                        <NavLink to={btnLink}>{btn}</NavLink>
                     </button>
                 )}
             </div>

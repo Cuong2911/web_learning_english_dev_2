@@ -3,7 +3,7 @@ import classNames from 'classnames/bind';
 // --------------------------------------------------------------
 import { CardBox } from '~/components';
 // --------------------------------------------------------------
-import Styles from './HomeBG.module.scss';
+import Styles from './main.module.scss';
 import { ICardProps } from '~/components/CardBox';
 // --------------------------------------------------------------
 const cx = classNames.bind(Styles);

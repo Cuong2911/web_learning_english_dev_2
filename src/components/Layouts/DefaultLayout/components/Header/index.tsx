@@ -1,8 +1,8 @@
 // ------------------------------------------------------------------------
 import classNames from 'classnames/bind';
-import { NavLink, useLocation } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 // ------------------------------------------------------------------------
-import styles from './Header.module.scss';
+import styles from './main.module.scss';
 import { PATH } from '~/configs/routes';
 import { image } from '~/assets';
 // ------------------------------------------------------------------------
@@ -15,24 +15,25 @@ interface Iuser {
     avtUrl?: string;
 }
 const user: Iuser = {
-    // id: '123456',
-    // name: 'Hoang cuong',
-    // gmail: 'hvcuong29112001@gmail.com',
-    // avtUrl: 'https://i.pinimg.com/564x/a1/ae/ff/a1aeff688cc6ad5ae43c9a9fa5a1a531.jpg',
+    id: '12345',
+    name: 'Hoang cuong',
+    gmail: 'hvcuong29112001@gmail.com',
+    avtUrl: 'https://i.pinimg.com/564x/a1/ae/ff/a1aeff688cc6ad5ae43c9a9fa5a1a531.jpg',
 };
 
 const menuList = [
     { title: 'Trang chủ', path: PATH.home },
-    { title: 'Học tập', path: PATH.listCourses },
-    { title: 'Kiểm tra', path: PATH.examList },
-    { title: 'Trò chơi', path: PATH.quizList },
-    { title: 'Giới thiệu', path: PATH.about },
+    { title: 'Bài Nghe', path: PATH.listen },
+    { title: 'Từ Vựng', path: PATH.voca },
+    { title: 'Ngữ Pháp', path: PATH.grammar },
+    { title: 'Phát Âm', path: PATH.pronounce },
+    { title: 'Trò Chơi', path: PATH.game },
 ];
 const profileMenuList = [
     { divider: true },
     { divider: false, title: 'Hồ sơ của tôi', path: PATH.authDetail },
     { divider: false, title: 'Khóa học của tôi', path: PATH.authCourse },
-    { divider: false, title: 'Cài đặt', path: PATH.setting },
+    { divider: false, title: 'Cài đặt', path: PATH.home },
     { divider: true },
     { divider: false, title: 'Đăng xuất', path: PATH.home },
 ];
@@ -40,9 +41,6 @@ const profileMenuList = [
 // ------------------------------------------------------------------------
 
 const Header = () => {
-    const pathCurrent = useLocation().pathname;
-    const path = pathCurrent.indexOf('/', 1) > 0 ? pathCurrent.slice(0, pathCurrent.indexOf('/', 1)) : pathCurrent;
-
     const isLogin = Object.keys(user).length === 0;
 
     return (
@@ -56,9 +54,8 @@ const Header = () => {
                 {/* -----------------nav menu-------------------- */}
                 <ul className={`display-center ${cx('nav-menu')}`}>
                     {menuList.map((item, index) => {
-                        const active = item.path === path ? cx('active') : '';
                         return (
-                            <li key={index} className={`display-center ${cx('nav-item')} ${active}`}>
+                            <li key={index} className={`display-center ${cx('nav-item')}`}>
                                 <NavLink className={`${cx('nav-link')}`} to={item.path}>
                                     {item.title}
                                 </NavLink>

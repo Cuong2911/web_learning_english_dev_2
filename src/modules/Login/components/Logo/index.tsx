@@ -1,7 +1,7 @@
 // ------------------------------------------------------------------------
 import classNames from 'classnames/bind';
 // ------------------------------------------------------------------------
-import Styles from './Logo.module.scss';
+import Styles from './main.module.scss';
 import { image } from '~/assets';
 // ------------------------------------------------------------------------
 const cx = classNames.bind(Styles);

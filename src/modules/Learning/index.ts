@@ -1,7 +1,5 @@
-import ListCourses from './ListCourses';
-import InforCourse from './InforCourse';
-import LearningCourse from './LearningCourse';
+import { ListenPage, VocaPage, GrammarPage, PronouncePage, GamePage } from './Page';
 
 // ------------------------------------------------------------------------
 
-export { ListCourses, InforCourse, LearningCourse };
+export { ListenPage, VocaPage, GrammarPage, PronouncePage, GamePage };

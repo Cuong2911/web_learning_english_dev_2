@@ -1,7 +1,7 @@
 import classNames from 'classnames/bind';
 import { MdKeyboardArrowLeft, MdMenu } from 'react-icons/md';
 // ------------------------------------------------------------------------
-import styles from './Header.module.scss';
+import styles from './main.module.scss';
 import { PATH } from '~/configs/routes';
 import { image } from '~/assets';
 // ------------------------------------------------------------------------

@@ -4,7 +4,7 @@ import { IoMdHome } from 'react-icons/io';
 import { NavLink } from 'react-router-dom';
 // ------------------------------------------------------------------------
 import { LoginForm, SignupForm, Logo } from './components';
-import Styles from './Auth.module.scss';
+import Styles from './main.module.scss';
 import { PATH } from '~/configs/routes';
 // ------------------------------------------------------------------------
 const cx = classNames.bind(Styles);

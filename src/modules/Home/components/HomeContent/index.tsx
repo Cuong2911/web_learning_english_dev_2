@@ -1,7 +1,7 @@
 // --------------------------------------------------------------
 import classNames from 'classnames/bind';
 // --------------------------------------------------------------
-import Styles from './HomeContent.module.scss';
+import Styles from './main.module.scss';
 // --------------------------------------------------------------
 import CardBox, { ICardProps } from '~/components/CardBox';
 // --------------------------------------------------------------
@@ -17,7 +17,7 @@ const HomeContent = (props: Props) => {
             {homeBodyCardContent.map((body, index) => {
                 const { imgSrc, imgLeft, title, desc } = body;
                 return (
-                    <div className={`animation-fade-in ${cx('box')}`}>
+                    <div key={index} className={`animation-fade-in ${cx('box')}`}>
                         <CardBox
                             imgSrc={imgSrc}
                             imgLeft={imgLeft}
